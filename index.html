@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My GALLerY!</h1>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm learning web development. This is my first website built with HTML, CSS, and JavaScript.</p>
+      <button id="myButton">Click Me!</button>
+      <p id="demo">This text will change.</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Art Gallery</h2>
+      <div class="photo-grid">
+        <div class="photo-item">
+          <img src="images/pexels-dorota-semla-1929451-18199980.jpg" alt="Art Photo 1">
+          <div class="photo-actions">
+            <button class="like-btn" data-image="1">
+              <span class="heart">♡</span>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="images/pexels-guillermo-gallegos-2147620696-31318368.jpg" alt="Art Photo 2">
+          <div class="photo-actions">
+            <button class="like-btn" data-image="2">
+              <span class="heart">♡</span>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="images/pexels-patricia-bozan-2151752743-32649616.jpg" alt="Art Photo 3">
+          <div class="photo-actions">
+            <button class="like-btn" data-image="3">
+              <span class="heart">♡</span>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="images/pexels-red-zeppelin-11764726.jpg" alt="Art Photo 4">
+          <div class="photo-actions">
+            <button class="like-btn" data-image="4">
+              <span class="heart">♡</span>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="photo-item">
+          <img src="images/pexels-syd-trgt-335495720-32229703.jpg" alt="Art Photo 5">
+          <div class="photo-actions">
+            <button class="like-btn" data-image="5">
+              <span class="heart">♡</span>
+              <span class="like-count">0</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <h2>Send Feedback</h2>
+      <p>I'd love to hear your thoughts about my website and art gallery!</p>
+      <form id="feedbackForm" class="feedback-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="rating">Overall Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Select a rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Very Good</option>
+            <option value="3">⭐⭐⭐ Good</option>
+            <option value="2">⭐⭐ Fair</option>
+            <option value="1">⭐ Needs Improvement</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Feedback:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me what you think about the website, the art gallery, or suggest improvements..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Feedback</button>
+      </form>
+      
+      <div id="feedback-success" class="success-message" style="display: none;">
+        <h3>Thank you for your feedback! 🎉</h3>
+        <p>Your message has been received and I really appreciate your input!</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
